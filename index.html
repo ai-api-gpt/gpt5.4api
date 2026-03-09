@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>【今日首发】简易API中转站：全网率先支持GPT-5.4 API | 国内大模型API直连服务</title>
+    <meta name="description" content="简易API中转站全网首发支持GPT-5.4 API！提供稳定、低价的国内大模型API中转服务。免翻墙直连GPT API、Claude、Deepseek等AI大模型，支持GPT-5.4原生电脑操作与高级推理，注册即送免费额度。">
+    <meta name="keywords" content="gpt5.4 api, gpt api, 简易API中转站, AI大模型gpt5.4 API, 国内大模型api中转, OpenAI接口, ChatGPT API直连">
+    <meta property="og:title" content="【首发】简易API中转站 - 全网率先支持GPT-5.4 API">
+    <meta property="og:description" content="专业AI大模型API中转平台，首发上线GPT-5.4 API接口。支持原生电脑操作、百万上下文，国内直连稳定快速，注册即送免费额度！">
+    <meta property="og:url" content="https://jeniya.cn/">
+    <meta property="twitter:title" content="【首发】简易API中转站 - 全网率先支持GPT-5.4 API">
+    <meta property="twitter:description" content="专业AI大模型API中转平台，首发上线GPT-5.4 API接口。支持原生电脑操作、百万上下文，国内直连稳定快速，注册即送免费额度！">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charSet="utf-8" />
+    <meta http-equiv='content-language' content='zh-CN'>
+    <link rel="icon" href="/openai.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content {
+            text-align: center;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            background: -webkit-linear-gradient(45deg, var(--color-1), var(--color-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.3;
+        }
+        .subtitle {
+            font-size: 22px;
+            color: #ddd;
+            margin-bottom: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(90deg, #007bff, #00d2ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 22px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+            border: none;
+        }
+        .button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.6);
+            color: #fff;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--color-1), var(--color-2));
+            z-index: -1;
+            opacity: 0.15;
+        }
+        .arrow-down {
+            position: absolute;
+            bottom: 30px;
+            cursor: pointer;
+            font-size: 28px;
+            color: #00d2ff;
+            animation: pulse 2s infinite;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1) translateY(0); }
+            50% { transform: scale(1.1) translateY(10px); }
+            100% { transform: scale(1) translateY(0); }
+        }
+
+        /* Markdown Content Styles */
+        .markdown-content {
+            padding: 40px;
+            background-color: #222;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            margin: 20px auto 60px;
+            max-width: 900px;
+            color: #eee;
+        }
+        .markdown-content h2 {
+            font-size: 32px;
+            margin-top: 30px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            color: #00d2ff;
+        }
+        .markdown-content h3 {
+            font-size: 24px;
+            color: #4FE2B1;
+        }
+        .markdown-content p, .markdown-content li {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+        .markdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #1a1a1a;
+        }
+        .markdown-content th, .markdown-content td {
+            border: 1px solid #444;
+            padding: 12px;
+            text-align: left;
+        }
+        .markdown-content th {
+            background-color: #333;
+            color: #fff;
+        }
+        pre {
+            background: #000;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid #333;
+        }
+        code {
+            font-family: Consolas, Monaco, monospace;
+            color: #4FE2B1;
+        }
+
+        /* 简易API Highlight Style */
+        .maxfly-highlight {
+            font-weight: bold;
+            background-color: rgba(0, 210, 255, 0.2);
+            color: #00d2ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 210, 255, 0.4);
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        a.maxfly-highlight {
+            text-decoration: none;
+        }
+        a.maxfly-highlight:hover {
+            background-color: rgba(0, 210, 255, 0.4);
+            transform: scale(1.05);
+            color: #fff;
+        }
+
+        /* Section Styles */
+        .section-container {
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        .section-1 { background: linear-gradient(135deg, #1a2a6c, #112240); border-left: 5px solid #00d2ff; }
+        .section-2 { background: linear-gradient(135deg, #23074d, #1a0b2e); border-left: 5px solid #7928ca; }
+        .section-3 { background: linear-gradient(135deg, #0f2027, #203a43); border-left: 5px solid #4FE2B1; }
+        .section-4 { background: linear-gradient(135deg, #3a1c71, #28124d); border-left: 5px solid #ff0080; }
+        .update-badge {
+            background: #ff4d4d;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+            animation: blink 2s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        /* Mobile Styles */
+        @media screen and (max-width: 767px) {
+            .container { padding-top: 60px; }
+            h1 { font-size: 30px; }
+            .subtitle { font-size: 18px; }
+            .button { font-size: 18px; padding: 12px 25px; }
+            .markdown-content { padding: 20px; margin: 10px; }
+            .markdown-content h2 { font-size: 24px; }
+            .markdown-content table { display: block; overflow-x: auto; }
+            .arrow-down { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <div class="update-badge">🟢 页面状态：已于 <span id="curdate"></span> 更新</div>
+            <h1>简易API中转站：全网首发支持 GPT-5.4 API</h1>
+            <div class="subtitle">
+                <strong>国内大模型API中转领跑者</strong><br>
+                原生支持电脑操作 | 百万上下文 | 极致推理能力<br>
+                免翻墙直连 ChatGPT、Claude、Deepseek 全系接口
+            </div>
+            <a href="https://jeniya.cn/" target="_self" class="button">🚀 立即注册获取 GPT-5.4 API 额度</a>
+        </div>
+        <div class="arrow-down" onclick="scrollToContent()">⬇️ 了解 GPT-5.4 史诗级更新</div>
+    </div>
+
+    <!-- Second Screen Content -->
+    <section class="markdown-content" id="more-content">
+
+        <blockquote>
+        <p><strong>最新动态（<span id="update-time"></span>）：</strong> OpenAI 史诗级更新！<strong>GPT-5.4</strong> 正式发布。作为目前面向专业工作能力最强的前沿模型，它在推理、编程以及智能体工作流方面实现了重要突破。<a href="https://jeniya.cn/" target="_blank" class="maxfly-highlight">简易API中转站</a> 现已全网率先完成底层对接，国内开发者可直接调用 <strong>gpt-5.4 api</strong>！</p>
+        </blockquote>
+
+    <div class="section-container section-1">
+        <h2>🔥 为什么选择简易API中转站调用 GPT-5.4 API？</h2>
+        <p>随着 <strong>AI大模型gpt5.4 API</strong> 的发布，开发者对更高效率、更强推理能力的需求急剧上升。作为国内领先的 <strong>简易API中转站</strong>，我们为您解决了一切网络与支付门槛：</p>
+        <ul>
+            <li>✅ <strong>国内直连，拒绝封号</strong>：无需科学上网，直接使用国内网络访问，延迟低至50ms，告别官方API封控风险。</li>
+            <li>✅ <strong>全系模型一站式接入</strong>：不仅首发支持 <code>gpt-5.4</code> 和 <code>gpt-5.4-pro</code>，还同步支持 <strong>gpt api</strong> (4o/o1/o3)、Claude 3.5、Deepseek 等所有主流大模型。</li>
+            <li>✅ <strong>成本更优，按量计费</strong>：免除官方高昂的预充值门槛，支持支付宝/微信付款，比官方渠道更具性价比。</li>
+            <li>✅ <strong>完美兼容 OpenAI 格式</strong>：仅需修改一行 Base URL，代码零成本迁移。</li>
+        </ul>
+    </div>
+
+    <div class="section-container section-2">
+        <h2>🚀 GPT-5.4 史诗级核心功能解析</h2>
+        <p>通过 <a href="https://jeniya.cn/" target="_blank" class="maxfly-highlight">简易API</a> 接入 <strong>gpt5.4 api</strong>，您将解锁以下划时代的能力：</p>
+        
+        <h3>1. 首个原生具备“电脑使用”能力的通用模型</h3>
+        <p>GPT-5.4 标志着智能体时代的重大进步。它不仅能通过代码操控电脑，还能仅基于截图通过鼠标和键盘指令完成交互（成功率达75.0%，远超上一代的47.3%）。</p>
+
+        <h3>2. 高达 100 万 Tokens 的超长上下文</h3>
+        <p>支持让智能体在更长时间跨度上规划、执行和校验任务。在处理复杂长文档、代码库分析时表现极度稳定。</p>
+
+        <h3>3. 革命性的“工具搜索”机制（省钱利器）</h3>
+        <p>过去调用大量工具会极大消耗 Token。GPT-5.4 引入按需检索工具机制，在保持准确率不变的前提下，<strong>Token 总用量最高可减少 47%</strong>！这使得通过 <strong>国内大模型api中转</strong> 调用的成本进一步降低。</p>
+
+        <h3>4. 编程与推理的极致结合</h3>
+        <p>继承了行业领先的代码能力，在复杂前端任务、自动化工作流、数据图表生成（Excel/PPT）上，达到了超越真实行业从业者的水准（得分83.0%）。</p>
+    </div>
+
+    <div class="section-container section-3">
+        <h2>💰 GPT-5.4 API 官方价格 VS 简易API优势</h2>
+        <p>官方公布的 GPT-5.4 单 Token 价格虽略高于上一代（输入约 $2.50/1M tokens，输出约 $15/1M tokens），但由于其<strong>推理效率极高，单位 token 解决问题的能力大幅提升</strong>，实际任务的总消耗反而更少。</p>
+        <p><strong>在简易API中转站尝鲜：</strong></p>
+        <ul>
+            <li>无需绑定海外信用卡。</li>
+            <li>登录 <a href="https://jeniya.cn/" target="_blank">简易API官网</a> -> 工作台 -> 操练场，选择模型 <code>gpt-5.4</code>，即可直接输入问题测试。</li>
+            <li>新用户注册即享免费测试额度，低成本验证业务场景。</li>
+        </ul>
+    </div>
+
+    <div class="section-container section-4">
+        <h2>💻 3分钟接入教程：Python 调用 GPT-5.4 API</h2>
+        <p>只需将官方的 Base URL 替换为 <strong>简易API中转站</strong> 的接口地址，即可无缝使用最新模型：</p>
+        <pre><code>import requests
+
+# 1. 在简易API (jeniya.cn) 获取你的专属 API Key
+API_KEY = "sk-your_jeniya_api_key_here"
+# 2. 替换为简易API的国内直连地址
+API_URL = "https://api.jeniya.cn/v1/chat/completions"
+
+headers = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+}
+
+data = {
+    "model": "gpt-5.4",  # 指定最新发布的 gpt-5.4 模型
+    "messages": [
+        {"role": "system", "content": "你是一个具有原生电脑操作和高级推理能力的智能体。"},
+        {"role": "user", "content": "请简述GPT-5.4在工具搜索方面的优化。"}
+    ],
+    "max_tokens": 2000
+}
+
+response = requests.post(API_URL, headers=headers, json=data)
+print(response.json())
+        </code></pre>
+    </div>
+
+    <div class="section-container section-1">
+        <h2>🌐 拥抱智能化工作时代</h2>
+        <p>GPT-5.4 不仅仅是一次模型升级，它让 AI 从“回答问题”正式迈向了“完成任务”。无论是企业自动化流程、开发者协作编程，还是复杂的数据分析，<strong>gpt5.4 api</strong> 都展现出了前所未有的可靠性。</p>
+        <p>不要让网络和支付成为阻碍您探索前沿AI的绊脚石。立即访问 <strong><a href="https://jeniya.cn/" target="_blank" class="maxfly-highlight">简易API中转站 (jeniya.cn)</a></strong>，获取您的第一把通往未来智能体的钥匙！</p>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="https://jeniya.cn/" target="_blank" class="button" style="font-size: 20px; padding: 12px 30px;">👉 免费注册简易API，立即试用 GPT-5.4</a>
+        </div>
+    </div>
+
+    </section>
+
+  <script>
+        // 动态随机背景颜色主题
+        const colors = [
+            ['#0f2027', '#203a43'], 
+            ['#1a2a6c', '#112240'], 
+            ['#23074d', '#1a0b2e'], 
+            ['#3a1c71', '#28124d']  
+        ];
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        const [color1, color2] = colors[randomIndex];
+        document.documentElement.style.setProperty('--color-1', color1);
+        document.documentElement.style.setProperty('--color-2', color2);
+
+        // 平滑滚动
+        function scrollToContent() {
+            document.getElementById('more-content').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 自动更新当天时间机制 (利于SEO和用户体验)
+        function formatDateForBadge(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}年${month}月${day}日`;
+        }
+        
+        function formatDateForText(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}/${month}/${day}`;
+        }
+        
+        const today = new Date();
+        // 渲染顶部角标时间
+        document.getElementById('curdate').textContent = formatDateForBadge(today);
+        // 渲染正文更新时间
+        document.getElementById('update-time').textContent = formatDateForText(today);
+        
+    </script>
+</body>
+</html>
